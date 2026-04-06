@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>T3Code.Features</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\T3Code.Core\T3Code.Core.csproj" />
+    <ProjectReference Include="..\T3Code.Transport\T3Code.Transport.csproj" />
+    <ProjectReference Include="..\T3Code.BackendHost\T3Code.BackendHost.csproj" />
+    <ProjectReference Include="..\T3Code.Platform\T3Code.Platform.csproj" />
+  </ItemGroup>
+</Project>

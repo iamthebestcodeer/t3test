@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Sb82XjT1KUA=",
+  "success": true,
+  "projectFilePath": "C:\\src\\t3-winui\\src\\T3Code.Features\\T3Code.Features.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shuey\\.nuget\\packages\\system.text.json\\9.0.6\\system.text.json.9.0.6.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.14\\microsoft.netcore.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.14\\microsoft.windowsdesktop.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.14\\microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

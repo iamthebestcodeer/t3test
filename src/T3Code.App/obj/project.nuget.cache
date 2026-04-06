@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "icP1AHVZKCU=",
+  "success": true,
+  "projectFilePath": "C:\\src\\t3-winui\\src\\T3Code.App\\T3Code.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.web.webview2\\1.0.3856.49\\microsoft.web.webview2.1.0.3856.49.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.28000.1721\\microsoft.windows.sdk.buildtools.10.0.28000.1721.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.241001000\\microsoft.windowsappsdk.1.5.241001000.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\system.text.json\\9.0.6\\system.text.json.9.0.6.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.14\\microsoft.netcore.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\9.0.14\\microsoft.netcore.app.runtime.win-x86.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.14\\microsoft.netcore.app.runtime.win-x64.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\9.0.14\\microsoft.netcore.app.runtime.win-arm64.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.14\\microsoft.windowsdesktop.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\9.0.14\\microsoft.windowsdesktop.app.runtime.win-x86.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\9.0.14\\microsoft.windowsdesktop.app.runtime.win-x64.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\9.0.14\\microsoft.windowsdesktop.app.runtime.win-arm64.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.14\\microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\9.0.14\\microsoft.aspnetcore.app.runtime.win-x86.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.14\\microsoft.aspnetcore.app.runtime.win-x64.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\9.0.14\\microsoft.aspnetcore.app.runtime.win-arm64.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.14\\microsoft.netcore.app.host.win-x64.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\9.0.14\\microsoft.netcore.app.host.win-x86.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.netcore.app.host.win-arm64\\9.0.14\\microsoft.netcore.app.host.win-arm64.9.0.14.nupkg.sha512",
+    "C:\\Users\\shuey\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
+  "logs": []
+}

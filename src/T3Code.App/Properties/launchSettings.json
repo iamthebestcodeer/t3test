@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "T3Code.App (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "T3Code.App (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

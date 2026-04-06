@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>T3Code.Core</RootNamespace>
+  </PropertyGroup>
+</Project>

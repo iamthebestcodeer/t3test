@@ -1,0 +1,336 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "System.Text.Json/9.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "T3Code.BackendHost/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "T3Code.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/T3Code.BackendHost.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/T3Code.BackendHost.dll": {}
+        }
+      },
+      "T3Code.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/T3Code.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/T3Code.Core.dll": {}
+        }
+      },
+      "T3Code.Platform/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "T3Code.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/T3Code.Platform.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/T3Code.Platform.dll": {}
+        }
+      },
+      "T3Code.Transport/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "System.Text.Json": "9.0.6",
+          "T3Code.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/T3Code.Transport.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/T3Code.Transport.dll": {}
+        }
+      }
+    },
+    "net9.0/win-x64": {
+      "System.Text.Json/9.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/System.Text.Json.targets": {}
+        }
+      },
+      "T3Code.BackendHost/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "T3Code.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/T3Code.BackendHost.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/T3Code.BackendHost.dll": {}
+        }
+      },
+      "T3Code.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/T3Code.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/T3Code.Core.dll": {}
+        }
+      },
+      "T3Code.Platform/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "T3Code.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/T3Code.Platform.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/T3Code.Platform.dll": {}
+        }
+      },
+      "T3Code.Transport/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "System.Text.Json": "9.0.6",
+          "T3Code.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/T3Code.Transport.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/T3Code.Transport.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "System.Text.Json/9.0.6": {
+      "sha512": "h+ZtYTyTnTh5Ju6mHCKb3FPGx4ylJZgm9W7Y2psUnkhQRPMOIxX+TCN0ZgaR/+Yea+93XHWAaMzYTar1/EHIPg==",
+      "type": "package",
+      "path": "system.text.json/9.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.4/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "buildTransitive/net461/System.Text.Json.targets",
+        "buildTransitive/net462/System.Text.Json.targets",
+        "buildTransitive/net8.0/System.Text.Json.targets",
+        "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
+        "buildTransitive/netstandard2.0/System.Text.Json.targets",
+        "lib/net462/System.Text.Json.dll",
+        "lib/net462/System.Text.Json.xml",
+        "lib/net8.0/System.Text.Json.dll",
+        "lib/net8.0/System.Text.Json.xml",
+        "lib/net9.0/System.Text.Json.dll",
+        "lib/net9.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.9.0.6.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "T3Code.BackendHost/1.0.0": {
+      "type": "project",
+      "path": "../T3Code.BackendHost/T3Code.BackendHost.csproj",
+      "msbuildProject": "../T3Code.BackendHost/T3Code.BackendHost.csproj"
+    },
+    "T3Code.Core/1.0.0": {
+      "type": "project",
+      "path": "../T3Code.Core/T3Code.Core.csproj",
+      "msbuildProject": "../T3Code.Core/T3Code.Core.csproj"
+    },
+    "T3Code.Platform/1.0.0": {
+      "type": "project",
+      "path": "../T3Code.Platform/T3Code.Platform.csproj",
+      "msbuildProject": "../T3Code.Platform/T3Code.Platform.csproj"
+    },
+    "T3Code.Transport/1.0.0": {
+      "type": "project",
+      "path": "../T3Code.Transport/T3Code.Transport.csproj",
+      "msbuildProject": "../T3Code.Transport/T3Code.Transport.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "T3Code.BackendHost >= 1.0.0",
+      "T3Code.Core >= 1.0.0",
+      "T3Code.Platform >= 1.0.0",
+      "T3Code.Transport >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\shuey\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\src\\t3-winui\\src\\T3Code.Features\\T3Code.Features.csproj",
+      "projectName": "T3Code.Features",
+      "projectPath": "C:\\src\\t3-winui\\src\\T3Code.Features\\T3Code.Features.csproj",
+      "packagesPath": "C:\\Users\\shuey\\.nuget\\packages\\",
+      "outputPath": "C:\\src\\t3-winui\\src\\T3Code.Features\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\shuey\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\src\\t3-winui\\src\\T3Code.BackendHost\\T3Code.BackendHost.csproj": {
+              "projectPath": "C:\\src\\t3-winui\\src\\T3Code.BackendHost\\T3Code.BackendHost.csproj"
+            },
+            "C:\\src\\t3-winui\\src\\T3Code.Core\\T3Code.Core.csproj": {
+              "projectPath": "C:\\src\\t3-winui\\src\\T3Code.Core\\T3Code.Core.csproj"
+            },
+            "C:\\src\\t3-winui\\src\\T3Code.Platform\\T3Code.Platform.csproj": {
+              "projectPath": "C:\\src\\t3-winui\\src\\T3Code.Platform\\T3Code.Platform.csproj"
+            },
+            "C:\\src\\t3-winui\\src\\T3Code.Transport\\T3Code.Transport.csproj": {
+              "projectPath": "C:\\src\\t3-winui\\src\\T3Code.Transport\\T3Code.Transport.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.200"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.14, 9.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[9.0.14, 9.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[9.0.14, 9.0.14]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\src\t3-winui\src\T3Code.BackendHost\obj\Debug\net9.0\T3Code.BackendHost.csproj.AssemblyReference.cache
+C:\src\t3-winui\src\T3Code.BackendHost\obj\Debug\net9.0\T3Code.BackendHost.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\t3-winui\src\T3Code.BackendHost\obj\Debug\net9.0\T3Code.BackendHost.AssemblyInfoInputs.cache
+C:\src\t3-winui\src\T3Code.BackendHost\obj\Debug\net9.0\T3Code.BackendHost.AssemblyInfo.cs
+C:\src\t3-winui\src\T3Code.BackendHost\obj\Debug\net9.0\T3Code.BackendHost.csproj.CoreCompileInputs.cache
+C:\src\t3-winui\src\T3Code.BackendHost\bin\Debug\net9.0\T3Code.BackendHost.deps.json
+C:\src\t3-winui\src\T3Code.BackendHost\bin\Debug\net9.0\T3Code.BackendHost.dll
+C:\src\t3-winui\src\T3Code.BackendHost\bin\Debug\net9.0\T3Code.BackendHost.pdb
+C:\src\t3-winui\src\T3Code.BackendHost\bin\Debug\net9.0\T3Code.Core.dll
+C:\src\t3-winui\src\T3Code.BackendHost\bin\Debug\net9.0\T3Code.Core.pdb
+C:\src\t3-winui\src\T3Code.BackendHost\obj\Debug\net9.0\T3Code.B.70C15276.Up2Date
+C:\src\t3-winui\src\T3Code.BackendHost\obj\Debug\net9.0\T3Code.BackendHost.dll
+C:\src\t3-winui\src\T3Code.BackendHost\obj\Debug\net9.0\refint\T3Code.BackendHost.dll
+C:\src\t3-winui\src\T3Code.BackendHost\obj\Debug\net9.0\T3Code.BackendHost.pdb
+C:\src\t3-winui\src\T3Code.BackendHost\obj\Debug\net9.0\ref\T3Code.BackendHost.dll

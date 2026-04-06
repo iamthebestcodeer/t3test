@@ -1,0 +1,15 @@
+C:\src\t3-winui\src\T3Code.Platform\bin\Debug\net9.0\T3Code.Platform.deps.json
+C:\src\t3-winui\src\T3Code.Platform\bin\Debug\net9.0\T3Code.Platform.dll
+C:\src\t3-winui\src\T3Code.Platform\bin\Debug\net9.0\T3Code.Platform.pdb
+C:\src\t3-winui\src\T3Code.Platform\bin\Debug\net9.0\T3Code.Core.dll
+C:\src\t3-winui\src\T3Code.Platform\bin\Debug\net9.0\T3Code.Core.pdb
+C:\src\t3-winui\src\T3Code.Platform\obj\Debug\net9.0\T3Code.Platform.csproj.AssemblyReference.cache
+C:\src\t3-winui\src\T3Code.Platform\obj\Debug\net9.0\T3Code.Platform.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\t3-winui\src\T3Code.Platform\obj\Debug\net9.0\T3Code.Platform.AssemblyInfoInputs.cache
+C:\src\t3-winui\src\T3Code.Platform\obj\Debug\net9.0\T3Code.Platform.AssemblyInfo.cs
+C:\src\t3-winui\src\T3Code.Platform\obj\Debug\net9.0\T3Code.Platform.csproj.CoreCompileInputs.cache
+C:\src\t3-winui\src\T3Code.Platform\obj\Debug\net9.0\T3Code.P.0819A376.Up2Date
+C:\src\t3-winui\src\T3Code.Platform\obj\Debug\net9.0\T3Code.Platform.dll
+C:\src\t3-winui\src\T3Code.Platform\obj\Debug\net9.0\refint\T3Code.Platform.dll
+C:\src\t3-winui\src\T3Code.Platform\obj\Debug\net9.0\T3Code.Platform.pdb
+C:\src\t3-winui\src\T3Code.Platform\obj\Debug\net9.0\ref\T3Code.Platform.dll
