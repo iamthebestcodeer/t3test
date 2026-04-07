@@ -8,15 +8,31 @@
     mc:Ignorable="d">
     <NavigationView
         x:Name="NavView"
+        Header="T3 Code"
         IsBackButtonVisible="Auto"
         IsSettingsVisible="True"
-        Header="T3 Code"
         PaneDisplayMode="Auto">
         <NavigationView.MenuItems>
-            <NavigationViewItem Content="Chats" Tag="chats" Icon="Comment" />
-            <NavigationViewItem Content="Terminal" Tag="terminal" Icon="CommandPrompt" />
-            <NavigationViewItem Content="Diff" Tag="diff" Icon="Compare" />
-            <NavigationViewItem Content="Git" Tag="git" Icon="Branch" />
+            <NavigationViewItem Content="Chats" Tag="chats">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE8BD;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="Terminal" Tag="terminal">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE756;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="Diff" Tag="diff">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE944;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="Git" Tag="git">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE9D5;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
         </NavigationView.MenuItems>
         <Frame x:Name="ContentFrame" />
     </NavigationView>

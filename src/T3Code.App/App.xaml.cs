@@ -5,7 +5,7 @@ namespace T3Code.App
 {
     public partial class App : Application
     {
-        private Window window = Window.Current;
+        private Window? window;
 
         public static AppServices Services { get; private set; } = null!;
 
@@ -32,7 +32,7 @@ namespace T3Code.App
             _ = StartBackendAndConnectAsync();
         }
 
-        private async Task StartBackendAndConnectAsync()
+        private static async Task StartBackendAndConnectAsync()
         {
             try
             {
@@ -50,6 +50,9 @@ namespace T3Code.App
 
                 var connectionInfo = await Services.BackendHost.StartAsync();
                 await Services.TransportClient.ConnectAsync(connectionInfo);
+                await Services.OrchestrationService.SubscribeToEventsAsync();
+                await Services.TerminalService.SubscribeToEventsAsync();
+                _ = Services.SettingsService.GetSettingsAsync();
             }
             catch (Exception ex)
             {

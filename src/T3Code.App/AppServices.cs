@@ -25,6 +25,7 @@ public sealed class AppServices : IAsyncDisposable
     public TerminalService TerminalService { get; }
     public GitService GitService { get; }
     public SettingsService SettingsService { get; }
+    public UpdateService UpdateService { get; }
 
     public AppServices()
     {
@@ -50,6 +51,7 @@ public sealed class AppServices : IAsyncDisposable
         TerminalService = new TerminalService(TransportClient, TerminalStore);
         GitService = new GitService(TransportClient, GitStore);
         SettingsService = new SettingsService(TransportClient, SettingsStore);
+        UpdateService = new UpdateService(TransportClient, SettingsStore);
 
         // Wire up connection state
         TransportClient.ConnectionStateChanged += state =>
@@ -60,6 +62,7 @@ public sealed class AppServices : IAsyncDisposable
 
     public async ValueTask DisposeAsync()
     {
+        await UpdateService.DisposeAsync();
         await OrchestrationService.DisposeAsync();
         await TerminalService.DisposeAsync();
         await GitService.DisposeAsync();

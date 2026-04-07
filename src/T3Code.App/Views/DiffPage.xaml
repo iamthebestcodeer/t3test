@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Page
+    x:Class="T3Code.App.Views.DiffPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Padding="16" RowSpacing="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" ColumnSpacing="12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Thread:" VerticalAlignment="Center" FontSize="13" />
+            <ComboBox x:Name="ThreadSelector" Grid.Column="1" MinWidth="200"
+                      PlaceholderText="Select a thread..." SelectionChanged="OnThreadSelected" />
+            <Button x:Name="RefreshBtn" Grid.Column="2" Content="Refresh"
+                    Click="OnRefresh" />
+        </Grid>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="12">
+            <TextBlock x:Name="DiffSummaryText"
+                       Text="No diff loaded."
+                       FontSize="12"
+                       Foreground="Gray"
+                       VerticalAlignment="Center" />
+            <Button x:Name="LoadTurnDiffBtn" Content="Turn Diff"
+                    Click="OnLoadTurnDiff" IsEnabled="False" />
+            <Button x:Name="LoadFullDiffBtn" Content="Full Thread Diff"
+                    Click="OnLoadFullDiff" IsEnabled="False" />
+        </StackPanel>
+
+        <Grid Grid.Row="2">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <TextBlock x:Name="DiffContent"
+                           FontFamily="Cascadia Code, Consolas, Courier New"
+                           FontSize="12"
+                           TextWrapping="NoWrap"
+                           Padding="12"
+                           IsTextSelectionEnabled="True"
+                           Text="Select a thread and click a diff button to view changes." />
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>
