@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+bin/
+obj/
+
+# IDE
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Opencode
+.opencode/
+
+# Debug logs
+stdout.txt
+stderr.txt

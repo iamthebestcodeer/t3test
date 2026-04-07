@@ -160,7 +160,7 @@ public sealed class ProcessSupervisor : IBackendHost, IDisposable
         }
 
         _ = Task.Run(() => MonitorProcessAsync(process), cancellationToken);
-        _ = Task.Run(() => CaptureOutputAsync(process), cancellationToken);
+        _ = Task.Run(() => CaptureOutput(process), cancellationToken);
 
         // Wait a moment for the server to start listening
         await Task.Delay(1000, cancellationToken);
@@ -218,7 +218,7 @@ public sealed class ProcessSupervisor : IBackendHost, IDisposable
         }
     }
 
-    private async Task CaptureOutputAsync(Process process)
+    private void CaptureOutput(Process process)
     {
         try
         {

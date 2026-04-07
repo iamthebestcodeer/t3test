@@ -13,6 +13,7 @@ public sealed class WebSocketTransportClient : ITransportClient
     private readonly ConcurrentDictionary<long, TaskCompletionSource<RpcResponse>> _pendingRequests = new();
     private readonly ConcurrentDictionary<string, List<Action<JsonElement>>> _subscriptions = new();
     private readonly ConcurrentDictionary<string, Action<JsonElement>> _domainEventHandlers = new();
+    private readonly ConcurrentDictionary<string, object?> _subscriptionParameters = new();
     private readonly object _stateLock = new();
     private readonly JsonSerializerOptions _jsonOptions;
     private readonly TimeSpan _reconnectDelay;
@@ -154,6 +155,9 @@ public sealed class WebSocketTransportClient : ITransportClient
             subs.Add(jsonHandler);
         }
 
+        // Store parameters for replay on reconnect (only store first registration per method)
+        _subscriptionParameters.TryAdd(method, parameters);
+
         // Send the subscription request to the server
         await SendRequestAsync(method, parameters, cancellationToken);
 
@@ -209,6 +213,9 @@ public sealed class WebSocketTransportClient : ITransportClient
             await _webSocket.ConnectAsync(uri, cancellationToken);
             UpdateState(ConnectionStateSnapshot.Connected());
 
+            // Replay subscriptions after successful reconnect
+            await ReplaySubscriptionsAsync(cancellationToken);
+
             _receiveLoop = Task.Run(() => ReceiveLoopAsync(cancellationToken), cancellationToken);
         }
         catch (OperationCanceledException)
@@ -219,6 +226,21 @@ public sealed class WebSocketTransportClient : ITransportClient
         {
             UpdateState(ConnectionStateSnapshot.Failed(ex.Message));
             StartReconnectLoop();
+        }
+    }
+
+    private async Task ReplaySubscriptionsAsync(CancellationToken cancellationToken)
+    {
+        foreach (var kvp in _subscriptionParameters)
+        {
+            try
+            {
+                await SendRequestAsync(kvp.Key, kvp.Value, cancellationToken);
+            }
+            catch
+            {
+                // Swallow errors during replay - individual subscription failures should not break reconnect
+            }
         }
     }
 

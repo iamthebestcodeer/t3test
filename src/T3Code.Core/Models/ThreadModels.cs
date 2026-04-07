@@ -69,6 +69,8 @@ public sealed record Thread
     public required string Title { get; init; }
     public required ThreadStatus Status { get; init; }
     public TurnId? CurrentTurnId { get; init; }
+    public string? Branch { get; init; }
+    public string? WorktreePath { get; init; }
     public DateTime CreatedAt { get; init; }
     public DateTime UpdatedAt { get; init; }
 

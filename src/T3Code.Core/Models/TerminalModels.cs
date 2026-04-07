@@ -15,6 +15,7 @@ public sealed record TerminalSession
     public required int Cols { get; init; }
     public required int Rows { get; init; }
     public required string Title { get; init; }
+    public string? Cwd { get; init; }
     public bool IsActive { get; init; }
     public DateTime CreatedAt { get; init; }
 }

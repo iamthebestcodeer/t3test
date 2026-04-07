@@ -6,9 +6,6 @@
     <ProjectReference Include="..\T3Code.Core\T3Code.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="9.0.6" />
-  </ItemGroup>
-  <ItemGroup>
     <InternalsVisibleTo Include="T3Code.Transport.Tests" />
   </ItemGroup>
 </Project>

@@ -109,7 +109,43 @@ public sealed class TerminalService : IAsyncDisposable
 
         _eventSubscription = await _transport.SubscribeAsync<object>(
             "terminal.onEvent",
-            _ => { },
+            evt =>
+            {
+                try
+                {
+                    if (evt is System.Text.Json.JsonElement elem)
+                    {
+                        var sessionId = elem.TryGetProperty("sessionId", out var sidProp)
+                            ? TerminalSessionId.From(sidProp.GetString() ?? "")
+                            : TerminalSessionId.From("");
+                        var typeStr = elem.TryGetProperty("type", out var typeProp)
+                            ? typeProp.GetString() ?? "data"
+                            : "data";
+                        var data = elem.TryGetProperty("data", out var dataProp)
+                            ? dataProp.GetString()
+                            : null;
+
+                        var terminalEventType = typeStr.ToLowerInvariant() switch
+                        {
+                            "title" => TerminalEventType.Title,
+                            "closed" => TerminalEventType.Closed,
+                            "exit" => TerminalEventType.Exit,
+                            _ => TerminalEventType.Data,
+                        };
+
+                        _store.HandleEvent(new TerminalEvent
+                        {
+                            SessionId = sessionId,
+                            Type = terminalEventType,
+                            Data = data,
+                            Timestamp = DateTime.UtcNow,
+                        });
+                    }
+                }
+                catch
+                {
+                }
+            },
             cancellationToken: cancellationToken);
     }
 

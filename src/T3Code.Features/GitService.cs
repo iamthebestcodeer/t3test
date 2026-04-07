@@ -119,6 +119,18 @@ public sealed class GitService : IAsyncDisposable
             cancellationToken);
     }
 
+    public async Task<GitStatus> PullAsync(
+        string cwd,
+        CancellationToken cancellationToken = default)
+    {
+        var status = await _transport.RequestAsync<GitStatus>(
+            "git.pull",
+            new { cwd },
+            cancellationToken);
+        _store.UpdateStatus(status);
+        return status;
+    }
+
     public async Task<GitStatus> RefreshStatusAsync(
         string cwd,
         CancellationToken cancellationToken = default)
