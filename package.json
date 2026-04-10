@@ -41,7 +41,8 @@
     "build:contracts": "turbo run build --filter=@t3tools/contracts",
     "release:smoke": "node scripts/release-smoke.ts",
     "clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules apps/*/dist packages/*/dist .turbo apps/*/.turbo packages/*/.turbo",
-    "sync:vscode-icons": "node scripts/sync-vscode-icons.mjs"
+    "sync:vscode-icons": "node scripts/sync-vscode-icons.mjs",
+    "prepare": "effect-language-service patch && bun run scripts/setup-hooks.js"
   },
   "devDependencies": {
     "@types/node": "catalog:",
