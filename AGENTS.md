@@ -1,6 +1,10 @@
 ## Project Snapshot
 
-T3 Code is a minimal GUI for coding agents (Codex, Claude). Ships multiple surfaces: server process (`t3` CLI) and web app.
+T3 Code is a minimal GUI for coding agents (Codex, Claude). The **.NET/WinUI desktop app** (`src/T3Code.App`) is the primary product. Ships multiple surfaces: server process (`t3` CLI) and web app. **Very early WIP** — proposing sweeping changes that improve long-term maintainability is encouraged.
+
+**Priorities**: Performance and reliability first. Behavior must stay predictable under load and during failures (session restarts, reconnects, partial streams). When trading off, choose correctness and robustness over convenience.
+
+**Maintainability**: If adding functionality, first extract shared logic into a separate module. Duplicate logic is a code smell — avoid it. Don't take shortcuts by adding local logic; refactor existing code when needed.
 
 ## Developer Commands
 
@@ -28,6 +32,16 @@ dotnet test
 
 # Run single .NET test project
 dotnet test tests/T3Code.Core.Tests
+```
+
+## Desktop App
+
+```bash
+# Run the desktop app (auto-builds TypeScript server + copies to output)
+dotnet run --project src/T3Code.App
+
+# Run without rebuilding the TypeScript server (faster iteration)
+dotnet run --project src/T3Code.App -p:SkipServerBuild=true
 ```
 
 ## Development
