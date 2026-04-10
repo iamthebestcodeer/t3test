@@ -292,12 +292,6 @@ This file inventories implemented product features and UX behavior present in th
 - Codex probes account/subscription state via `codex app-server` and adjusts model availability accordingly. Refs: `apps/server/src/provider/codexAppServer.ts`, `apps/server/src/provider/codexAccount.ts`, `apps/server/src/provider/Layers/CodexProvider.ts`
 - Codex sessions support start, resume, model switching, reasoning effort, fast mode, image attachments as data URLs, interrupt, approvals, structured user input, thread read, and rollback. Refs: `apps/server/src/provider/Layers/CodexAdapter.ts`, `apps/server/src/codexAppServerManager.ts`
 
-## Claude-Specific Features
-
-- Claude provider detects auth status and distinguishes API-key auth from subscription auth. Refs: `apps/server/src/provider/Layers/ClaudeProvider.ts`
-- Claude adjusts context-window defaults by subscription tier. Refs: `apps/server/src/provider/Layers/ClaudeProvider.ts`
-- Claude account metadata is probed without spending model tokens. Refs: `apps/server/src/provider/Layers/ClaudeProvider.ts`
-- Claude sessions support start, resume, model switching, plan/default interaction switching, approval gating vs full-access bypass, ask-user-question flows, tool approval flows, proposed-plan capture on exit from plan mode, interrupt, and rollback. Refs: `apps/server/src/provider/Layers/ClaudeAdapter.ts`
 
 ## Git, Worktree, And PR Backend Features
 
