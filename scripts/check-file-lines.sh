@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 # Pre-commit hook to check file line counts
 # Rejects files exceeding MAX_LINES threshold
 
 MAX_LINES=500
 ERROR_FILES=""
 
-git diff --cached --name-only --diff-filter=ACM -z | while IFS= read -r -d '' file; do
+while IFS= read -r -d '' file; do
     # Skip binary files and certain extensions
     case "$file" in
         *.lock|*.json|*.md|*.yml|*.yaml) continue ;;
@@ -17,7 +17,7 @@ git diff --cached --name-only --diff-filter=ACM -z | while IFS= read -r -d '' fi
     if [ "$lines" -gt "$MAX_LINES" ]; then
         ERROR_FILES="$ERROR_FILES  $file ($lines lines)\n"
     fi
-done
+done < <(git diff --cached --name-only --diff-filter=ACM -z)
 
 if [ -n "$ERROR_FILES" ]; then
     echo "ERROR: The following files exceed $MAX_LINES lines:"
